@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Viceen Projects</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('img/Fondo.jpg') no-repeat center center fixed;
-            background-size: cover;
-            backdrop-filter: blur(5px);
-            color: white;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(0,0,0,0.6);
-            border-radius: 10px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .button {
-            display: block;
-            text-align: center;
-            margin: 20px auto;
-            text-decoration: none;
-            color: white;
-            background-color: rgba(255, 69, 0, 0.8); /* Naranja con opacidad */
-            padding: 15px 25px;
-            border-radius: 5px;
-            transition: 0.3s;
-            width: 200px;
-        }
-        .button:hover {
-            background-color: rgba(255, 69, 0, 1); /* Más sólido al pasar el mouse */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viceen Projects</title>
+
+<style>
+body{
+    margin:0;
+    font-family:system-ui, sans-serif;
+    background:#0b0b0b;
+    color:#eaeaea;
+    text-align:center;
+}
+
+/* CONTENIDO */
+.container{
+    margin-top:80px;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+.game{
+    margin:15px;
+}
+
+a{
+    color:#eaeaea;
+    text-decoration:none;
+    border:1px solid #333;
+    padding:12px 26px;
+    border-radius:8px;
+    display:inline-block;
+    transition:.2s;
+}
+
+a:hover{
+    background:#151515;
+    border-color:#777;
+}
+
+/* POPUP */
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-box{
+    background:#121212;
+    padding:30px 40px;
+    border-radius:14px;
+    position:relative;
+    animation:fade .4s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:scale(.9)}
+    to{opacity:1; transform:scale(1)}
+}
+
+/* boton cerrar */
+.close{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:22px;
+    cursor:pointer;
+    color:#aaa;
+}
+
+.close:hover{
+    color:white;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Viceen Projects</h1>
 
-        <!-- Botón de juegos -->
-        <a class="button" href="juegos.html">Juegos</a>
-
-        <!-- Botón al canal de YouTube -->
-        <a class="button" href="https://www.youtube.com/@viceenMultii" target="_blank">Canal de YouTube</a>
+<!-- POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <div class="close" onclick="cerrar()">✕</div>
+        <h2>Bienvenido</h2>
+        <p>Bienvenido a la página de proyectos</p>
     </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+<h1>Lista de Juegos</h1>
+
+<div class="game"><a href="victoria.html">Victoria II</a></div>
+<div class="game"><a href="#">Age of Empires II</a></div>
+<div class="game"><a href="#">Próximamente</a></div>
+
+</div>
+
+<script>
+function cerrar(){
+    document.getElementById("popup").style.display="none";
+}
+</script>
+
 </body>
 </html>
 
