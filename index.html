@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-.scan-box{
-    margin-top:25px;
-    text-align:center;
-}
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multis proyect</title>
 
-.scan-box img{
-    width:85%;
-    max-width:420px;
-    border-radius:10px;
-}
-
-.scan-text{
-    margin-top:10px;
-    font-size:14px;
-    color:#8fff8f;
-}
 <style>
 body{
     margin:0;
     font-family:system-ui, sans-serif;
-    background:#0b0b0b;
+    background:url("img/Fondo.jpg") no-repeat center center fixed;
+    background-size:cover;
     color:#eaeaea;
     text-align:center;
+}
+
+/* capa oscura encima del fondo */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(5px);
+    z-index:-1;
 }
 
 /* CONTENIDO */
@@ -121,6 +122,3 @@ function cerrar(){
 
 </body>
 </html>
-
-
-
