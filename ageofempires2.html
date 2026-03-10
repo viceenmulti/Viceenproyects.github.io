@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Age of empires 2</title> - Viceen Projects</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background:url("img/Fondo.jpg") no-repeat center center fixed;
+    background-size:cover;
+    color:white;
+}
+
+/* capa oscura encima del fondo */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    z-index:-1;
+}
+
+.container{
+    max-width:800px;
+    margin:60px auto;
+    padding:30px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.08);
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+    text-align:center;
+    animation:fade 1s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(20px)}
+    to{opacity:1; transform:translateY(0)}
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+img{
+    max-width:100%;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 0 20px rgba(0,0,0,0.7);
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+.info{
+    font-size:19px;
+    line-height:1.5;
+    margin-bottom:35px;
+}
+
+/* BOTONES */
+.button{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:14px 30px;
+    margin:10px;
+    border-radius:8px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    background:linear-gradient(45deg,#555,#777);
+    transition:.3s;
+}
+
+.button:hover{
+    background:linear-gradient(45deg,#777,#999);
+    transform:scale(1.07);
+    box-shadow:0 0 15px rgba(255,255,255,0.3);
+}
+
+/* responsive */
+@media(max-width:600px){
+    .container{
+        margin:30px 15px;
+        padding:20px;
+    }
+    h1{
+        font-size:28px;
+    }
+    .info{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Victoria II</h1>
+
+<img src="img/victoria.jpg" alt="Victoria II">
+
+<div class="info">
+    Age of empires 2 clasico, y portable.
+</div>
+<div class="scan-box">
+<img src="img/virustotalaoe.jpg" alt="Resultado VirusTotal">
+<p class="scan-text">Verificado con VirusTotal — 0 detecciones</p>
+</div>
+<a class="button" href="https://download2389.mediafire.com/57kyrp6o94ugiIY4QfkhmG2pz7XIMCzdUaDImr-cKtDlCFu0UCdydEAs1FvWmpSqQhr-psVRHFGrcmbSkCQ3h5UiYRhWvhv5C6AX0k_QunVMaNLvwRG4_FS1w-Myei2SolHtZ0aoS_rk7gGnAVBBl8uI4WVCV-XiNlP29rrw/yyt6ko73gzq2bkx/Age+of+Empires+II.7z" target="_blank">
+Descargar
+</a>
+
+<br>
+
+<a class="button" href="index.html">Volver a inicio</a>
+
+</div>
+
+</body>
+</html>
