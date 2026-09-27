@@ -28,11 +28,25 @@ body::before{
 }
 
 .container{
-    margin-top:80px;
+    margin-top:60px;
+    margin-bottom:60px;
 }
 
 h1{
     margin-bottom:30px;
+}
+
+/* Subtítulos de categorías */
+h2{
+    font-size:22px;
+    color:#aaa;
+    margin-top:40px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    display:inline-block;
+    padding-bottom:5px;
 }
 
 /* LISTA DE JUEGOS */
@@ -46,6 +60,7 @@ h1{
     border-radius:10px;
     padding:10px;
     transition:.2s;
+    text-decoration:none;
 }
 
 .game:hover{
@@ -60,9 +75,8 @@ h1{
     margin-right:15px;
 }
 
-.game a{
+.game span{
     color:#eaeaea;
-    text-decoration:none;
     font-size:20px;
 }
 </style>
@@ -72,37 +86,45 @@ h1{
 
 <div class="container">
 
-<h1>Lista de Juegos</h1>
+    <h1>Lista de Juegos</h1>
 
-<a href="victoria.html" class="game">
-<img src="img/victoriasteam.jpg">
-<span>Victoria II</span>
-</a>
+    <!-- SECCIÓN 1: JUEGOS DESCARGABLES -->
+    <h2>Juegos para Descargar</h2>
+
+    <a href="victoria.html" class="game">
+        <img src="img/victoriasteam.jpg">
+        <span>Victoria II</span>
+    </a>
+
+    <a href="ageofempires2.html" class="game">
+        <img src="img/ageofempires2.jpg">
+        <span>Age of empires 2</span>
+    </a>
+
+    <a href="fnaf.html" class="game">
+        <img src="img/fnaf title.jpg">
+        <span>Five Nights at Freddy's</span>
+    </a>
+
+    <a href="minecraft.html" class="game">
+        <img src="img/minecraft.jpg">
+        <span>Minecraft Launcher</span>
+    </a>
+
+    <!-- SECCIÓN 2: JUEGOS EN LÍNEA / FLASH -->
+    <h2>Juegos Flash (Para jugar en la Web)</h2>
+
+    <a href="fernanfloo.html" class="game">
+        <img src="img/fernanfloo title.jpg">
+        <span>Fernanfloo Rescatar a Curly</span>
+    </a>
+
+    <a href="alienhominid.html" class="game">
+        <img src="img/alienhominid title.jpg">
+        <span>Alien Hominid</span>
+    </a>
 
 </div>
-<a href="ageofempires2.html" class="game">
-<img src="img/ageofempires2.jpg">
-<span>Age of empires 2</span>
-</a>
 
-<a href="fnaf.html" class="game">
-<img src="img/fnaf title.jpg">
-<span>Five Nights at Freddy's</span>
-</a>
-
-<a href="fernanfloo.html" class="game">
-<img src="img/fernanfloo title.jpg">
-<span>Fernanfloo Rescatar a Curly</span>
-</a>
-
-<a href="minecraft.html" class="game">
-<img src="img/minecraft.jpg">
-<span>Minecraft Launcher</span>
-</a>
-
-</div>
-
-</div>
-    
 </body>
 </html>
