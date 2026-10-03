@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Desbloqueador de Juegos para Steam - Viceen Projects</title>
+<title>Lua Tools - Viceen Projects</title>
 
 <style>
 body{
@@ -40,7 +40,7 @@ body::before{
 }
 
 h1{
-    font-size:36px;
+    font-size:40px;
     margin-bottom:25px;
     letter-spacing:1px;
 }
@@ -60,7 +60,44 @@ img:hover{
 .info{
     font-size:19px;
     line-height:1.5;
-    margin-bottom:35px;
+    margin-bottom:25px;
+}
+
+/* Caja de advertencia en amarillo */
+.warning-box{
+    background: rgba(255, 235, 59, 0.15);
+    border: 1px solid #ffee55;
+    color: #fff59d;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.warning-box strong{
+    color: #ffff00;
+}
+
+/* Estilos de la caja de VirusTotal */
+.scan-box{
+    margin: 10px auto 25px auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scan-box img{
+    max-width: 250px;
+    margin-bottom: 5px;
+}
+
+.scan-text{
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #88ff88;
 }
 
 /* BOTONES */
@@ -90,7 +127,7 @@ img:hover{
         padding:20px;
     }
     h1{
-        font-size:26px;
+        font-size:28px;
     }
     .info{
         font-size:16px;
@@ -103,15 +140,26 @@ img:hover{
 
 <div class="container">
 
-<h1>Desbloqueador de Juegos para Steam</h1>
+<h1>Lua Tools</h1>
 
-<img src="img/greenluma title.jpg" alt="Desbloqueador Steam">
+<img src="img/luatoolsfoto.jpg" alt="Lua Tools">
 
 <div class="info">
-    Descarga juegos desde steam de manera gratuita, ⚠️USA UNA CUENTA SECUNDARIA ESTO ES BANEABLE!!!!⚠️.
+    Herramienta liviana diseñada para desbloquear y gestionar juegos/DLCs en Steam de forma rápida (podes meter parches y jugar en online). Esto solo te permite descargar el juego y jugar en ese dispositivo, no significa que sea tuyo y puedas jugar en cualquier pc.
+
+    <div class="warning-box">
+        ⚠️️ <strong>ADVERTENCIA:</strong> El uso de esta herramienta conlleva riesgo de baneos en Steam. Se recomienda encarecidamente utilizar una <strong>cuenta secundaria</strong> para evitar cualquier sanción en tu cuenta principal.
+    </div>
 </div>
 
-<a class="button" href="LINK_DE_DESCARGA_AQUI" target="_blank">
+<div class="scan-box">
+    <img src="img/virustotal2.jpg" alt="Resultado VirusTotal">
+    <p class="scan-text">Verificado con VirusTotal — 1 falso positivo</p>
+</div>
+
+<br>
+
+<a class="button" href="LINK_DE_DESCARGA_LUA_TOOLS" target="_blank">
 Descargar
 </a>
 
